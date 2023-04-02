@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-export default function Home({ test }: { test: string }) {
+export default function Contact({ test }: { test: string }) {
   return (
     <>
       <Head>
@@ -10,7 +10,7 @@ export default function Home({ test }: { test: string }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Remote Page heading</h1>
+        <h1>Remote Page contact</h1>
         {`getServerSideProps - ${test}`}
       </main>
     </>
@@ -20,7 +20,7 @@ export default function Home({ test }: { test: string }) {
 export async function getServerSideProps() {
   return {
     props: {
-      test: 'ABC'
+      test: 'BBBB'
     }
   };
 }
