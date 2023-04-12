@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home({ test }: { test: string }) {
   return (
@@ -10,8 +11,10 @@ export default function Home({ test }: { test: string }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Remote Page heading</h1>
+        <h1>Remote Home Page</h1>
         {`getServerSideProps - ${test}`}
+        <br />
+        <Link href={'/contact'}>Contact</Link>
       </main>
     </>
   );
